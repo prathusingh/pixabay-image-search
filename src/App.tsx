@@ -1,12 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import ImageSearch from './search/ImageSearch';
+import ImageDetails from './search/ImageDetails';
 
 import './App.scss';
 
 const App: React.FC = () => {
   return (
-    <div>
-      Pixabay image search app
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ImageSearch/>} />
+        <Route path="/:id" element={<ImageDetails/>} />
+      </Routes>
+    </Router>
   );
 }
 
