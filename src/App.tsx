@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ImageSearch from './search/ImageSearch';
 import ImageDetails from './search/ImageDetails';
 
-import './App.scss';
-
 const App: React.FC = () => {
   return (
     <Router>
