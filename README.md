@@ -25,3 +25,9 @@ Your app is ready to be deployed!
 Search bar functionality is not available. It is for display only.
 The app displays 20 images.
 Click on the image to see the user name, id, profile image and image relevant tags.
+<img width="1276" alt="Screen Shot 2023-09-05 at 3 34 44 PM" src="https://github.com/prathusingh/pixabay-image-search/assets/11303380/c3ce1a69-6ee8-4718-b8e2-0ebe173dc7e9">
+
+<img width="1279" alt="Screen Shot 2023-09-05 at 3 34 56 PM" src="https://github.com/prathusingh/pixabay-image-search/assets/11303380/bb8d5ce2-6a11-4f82-a8f6-9197de1012a0">
+
+
+
