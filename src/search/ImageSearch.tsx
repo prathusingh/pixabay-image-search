@@ -77,10 +77,10 @@ const ImageSearch: React.FC = () => {
 
   return (
     <section className="image-search-wrapper">
-      <SearchBar className="mediumSearchBar" onChange={onInputChange} />
+      <SearchBar className="medium-search-bar" onChange={onInputChange} />
       <div className="image-results">
         {error && `Can't able to load images.`}
-        {!isLoaded && <Loading message="Images loading ..."/>}
+        {!isLoaded && <Loading className="images-loading" message="Images loading ..."/>}
         {images.length < 1 && isLoaded && `No images found.`}
         {
           <ul className="images-list">
