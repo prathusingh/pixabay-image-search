@@ -79,15 +79,29 @@ const ImageSearch: React.FC = () => {
     <section className="image-search-wrapper">
       <SearchBar className="medium-search-bar" onChange={onInputChange} />
       <div className="image-results">
-        {error && `Can't able to load images.`}
-        {!isLoaded && <Loading className="images-loading" message="Images loading ..."/>}
-        {images.length < 1 && isLoaded && `No images found.`}
+        {
+          error && 
+          <div className="images-response-text">
+            Can't able to load images.
+          </div>
+        }
+        {
+          !isLoaded && 
+          <Loading className="images-response-text" message="Images loading ..."/>
+        }
+        {
+          images.length < 1 && 
+          isLoaded && 
+          <div className="images-response-text">
+            No images found.
+          </div>
+        }
         {
           <ul className="images-list">
             {
               images.map((image: any) => {
                 return (
-                  <li className="image-card">
+                  <li>
                     <Link 
                       to={`/${image.id}`}
                       state={
@@ -96,7 +110,12 @@ const ImageSearch: React.FC = () => {
                           tags: getImageTags(image),
                         }
                       }>
-                        <ImageCard key={image.id} url={image.previewURL} />
+                        <ImageCard 
+                          key={image.id}
+                          url={image.previewURL}
+                          height={100} 
+                          width={100}
+                      />
                     </Link>
                   </li>
                 )

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SearchBar.scss';
+
 export type SearchBarProps = {
   className: string,
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
@@ -7,7 +9,7 @@ export type SearchBarProps = {
 
 const SearchBar: React.FC<SearchBarProps> = ({className, onChange}) => {
   return (
-    <div className="search-wrapper">
+    <div className="search-bar">
       <input
         type="search"
         className={className}

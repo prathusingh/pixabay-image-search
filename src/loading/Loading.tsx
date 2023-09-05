@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Loading: React.FC<{message: string}> = ({ message }) => {
+import './Loading.scss';
+
+const Loading: React.FC<{message: string, className: string}> = ({ message, className }) => {
   return (
-    <div className="loading">
-      {message}
+    <div className={className}>
+      <span className="loading">{message}</span>
     </div>
   )
 }
